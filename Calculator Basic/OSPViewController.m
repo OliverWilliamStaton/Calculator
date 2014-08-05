@@ -14,82 +14,67 @@
 
 @implementation OSPViewController
 
--(IBAction)Number1:(id)sender
+// Helper function for when a number is selected
+-(void)TrackSelectedNumber:(int)MyNumber
 {
     SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 1;
+    SelectNumber = SelectNumber + MyNumber;
     Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+}
+
+-(IBAction)Number1:(id)sender
+{
+    [self TrackSelectedNumber:1];
 }
 
 -(IBAction)Number2:(id)sender
 {
-    SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 2;
-    Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+    [self TrackSelectedNumber:2];
 }
 
 -(IBAction)Number3:(id)sender
 {
-    SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 3;
-    Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+    [self TrackSelectedNumber:3];
 }
 
 -(IBAction)Number4:(id)sender
 {
-    SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 4;
-    Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+    [self TrackSelectedNumber:4];
 }
 
 -(IBAction)Number5:(id)sender
 {
-    SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 5;
-    Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+    [self TrackSelectedNumber:5];
 }
 
 -(IBAction)Number6:(id)sender
 {
-    SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 6;
-    Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+    [self TrackSelectedNumber:6];
 }
 
 -(IBAction)Number7:(id)sender
 {
-    SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 7;
-    Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+    [self TrackSelectedNumber:7];
 }
 
 -(IBAction)Number8:(id)sender
 {
-    SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 8;
-    Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+    [self TrackSelectedNumber:8];
 }
 
 -(IBAction)Number9:(id)sender
 {
-    SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 9;
-    Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+    [self TrackSelectedNumber:9];
 }
 
 -(IBAction)Number0:(id)sender
 {
-    SelectNumber = SelectNumber * 10;
-    SelectNumber = SelectNumber + 0;
-    Screen.text = [NSString stringWithFormat:@"%i", SelectNumber];
+    [self TrackSelectedNumber:0];
 }
 
-// TODO use a helper function to run logic only once
-// TODO use a helper function to consider numbers only once
-
--(IBAction)Times:(id)sender
+// Helper function for runnign calculations
+-(void)RunningCalculation:(int)MyMethod
 {
-
     if(RunningTotal == 0)
     {
         RunningTotal = SelectNumber;
@@ -114,6 +99,12 @@
                 break;
         }
     }
+}
+
+-(IBAction)Times:(id)sender
+{
+
+    [self RunningCalculation:Method];
     
     Method = 1;
     SelectNumber = 0;
@@ -121,30 +112,7 @@
 
 -(IBAction)Divide:(id)sender
 {
-    if(RunningTotal == 0)
-    {
-        RunningTotal = SelectNumber;
-    }
-    else
-    {
-        switch(Method)
-        {
-            case 1:
-                RunningTotal = RunningTotal * SelectNumber;
-                break;
-            case 2:
-                RunningTotal = RunningTotal / SelectNumber;
-                break;
-            case 3:
-                RunningTotal = RunningTotal - SelectNumber;
-                break;
-            case 4:
-                RunningTotal = RunningTotal + SelectNumber;
-                break;
-            default:
-                break;
-        }
-    }
+    [self RunningCalculation:Method];
     
     Method = 2;
     SelectNumber = 0;
@@ -152,30 +120,7 @@
 
 -(IBAction)Subtract:(id)sender
 {
-    if(RunningTotal == 0)
-    {
-        RunningTotal = SelectNumber;
-    }
-    else
-    {
-        switch(Method)
-        {
-            case 1:
-                RunningTotal = RunningTotal * SelectNumber;
-                break;
-            case 2:
-                RunningTotal = RunningTotal / SelectNumber;
-                break;
-            case 3:
-                RunningTotal = RunningTotal - SelectNumber;
-                break;
-            case 4:
-                RunningTotal = RunningTotal + SelectNumber;
-                break;
-            default:
-                break;
-        }
-    }
+    [self RunningCalculation:Method];
     
     Method = 3;
     SelectNumber = 0;
@@ -183,30 +128,7 @@
 
 -(IBAction)Plus:(id)sender
 {
-    if(RunningTotal == 0)
-    {
-        RunningTotal = SelectNumber;
-    }
-    else
-    {
-        switch(Method)
-        {
-            case 1:
-                RunningTotal = RunningTotal * SelectNumber;
-                break;
-            case 2:
-                RunningTotal = RunningTotal / SelectNumber;
-                break;
-            case 3:
-                RunningTotal = RunningTotal - SelectNumber;
-                break;
-            case 4:
-                RunningTotal = RunningTotal + SelectNumber;
-                break;
-            default:
-                break;
-        }
-    }
+    [self RunningCalculation:Method];
     
     Method = 4;
     SelectNumber = 0;
@@ -214,30 +136,7 @@
 
 -(IBAction)Equals:(id)sender
 {
-    if(RunningTotal == 0)
-    {
-        RunningTotal = SelectNumber;
-    }
-    else
-    {
-        switch(Method)
-        {
-            case 1:
-                RunningTotal = RunningTotal * SelectNumber;
-                break;
-            case 2:
-                RunningTotal = RunningTotal / SelectNumber;
-                break;
-            case 3:
-                RunningTotal = RunningTotal - SelectNumber;
-                break;
-            case 4:
-                RunningTotal = RunningTotal + SelectNumber;
-                break;
-            default:
-                break;
-        }
-    }
+    [self RunningCalculation:Method];
     
     Method = 0;
     SelectNumber = 0;
