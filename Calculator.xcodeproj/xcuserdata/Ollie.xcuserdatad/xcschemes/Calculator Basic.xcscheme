@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "072EFE3F1990768000B32966"
                BuildableName = "Calculator Basic.app"
-               BlueprintName = "Calculator Basic"
-               ReferencedContainer = "container:Calculator Basic.xcodeproj">
+               BlueprintName = "Calculator"
+               ReferencedContainer = "container:Calculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "072EFE631990768000B32966"
                BuildableName = "Calculator BasicTests.xctest"
-               BlueprintName = "Calculator BasicTests"
-               ReferencedContainer = "container:Calculator Basic.xcodeproj">
+               BlueprintName = "CalculatorTests"
+               ReferencedContainer = "container:Calculator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "072EFE3F1990768000B32966"
             BuildableName = "Calculator Basic.app"
-            BlueprintName = "Calculator Basic"
-            ReferencedContainer = "container:Calculator Basic.xcodeproj">
+            BlueprintName = "Calculator"
+            ReferencedContainer = "container:Calculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "072EFE3F1990768000B32966"
             BuildableName = "Calculator Basic.app"
-            BlueprintName = "Calculator Basic"
-            ReferencedContainer = "container:Calculator Basic.xcodeproj">
+            BlueprintName = "Calculator"
+            ReferencedContainer = "container:Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "072EFE3F1990768000B32966"
             BuildableName = "Calculator Basic.app"
-            BlueprintName = "Calculator Basic"
-            ReferencedContainer = "container:Calculator Basic.xcodeproj">
+            BlueprintName = "Calculator"
+            ReferencedContainer = "container:Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
