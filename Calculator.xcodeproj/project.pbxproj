@@ -23,6 +23,8 @@
 		072EFE701990768000B32966 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072EFE6E1990768000B32966 /* InfoPlist.strings */; };
 		072EFE721990768000B32966 /* Calculator_BasicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EFE711990768000B32966 /* Calculator_BasicTests.m */; };
 		07CB4B9019B24880006B9122 /* Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CB4B8F19B24880006B9122 /* Conversion.m */; };
+		07CB4B9319B25190006B9122 /* AgeOfLaika.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CB4B9219B25190006B9122 /* AgeOfLaika.m */; };
+		07CB4B9719B25285006B9122 /* laika.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CB4B9619B25285006B9122 /* laika.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		072EFE711990768000B32966 /* Calculator_BasicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator_BasicTests.m; sourceTree = "<group>"; };
 		07CB4B8E19B24880006B9122 /* Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Conversion.h; path = ../Conversion.h; sourceTree = "<group>"; };
 		07CB4B8F19B24880006B9122 /* Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Conversion.m; path = ../Conversion.m; sourceTree = "<group>"; };
+		07CB4B9119B25190006B9122 /* AgeOfLaika.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgeOfLaika.h; path = ../AgeOfLaika.h; sourceTree = "<group>"; };
+		07CB4B9219B25190006B9122 /* AgeOfLaika.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgeOfLaika.m; path = ../AgeOfLaika.m; sourceTree = "<group>"; };
+		07CB4B9619B25285006B9122 /* laika.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = laika.png; path = images/laika.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +130,8 @@
 				072EFE5C1990768000B32966 /* OSPViewController.m */,
 				07CB4B8E19B24880006B9122 /* Conversion.h */,
 				07CB4B8F19B24880006B9122 /* Conversion.m */,
+				07CB4B9119B25190006B9122 /* AgeOfLaika.h */,
+				07CB4B9219B25190006B9122 /* AgeOfLaika.m */,
 				072EFE5E1990768000B32966 /* Images.xcassets */,
 				072EFE4A1990768000B32966 /* Supporting Files */,
 			);
@@ -134,6 +141,7 @@
 		072EFE4A1990768000B32966 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				07CB4B9619B25285006B9122 /* laika.png */,
 				072EFE4B1990768000B32966 /* Calculator-Info.plist */,
 				072EFE4C1990768000B32966 /* InfoPlist.strings */,
 				072EFE4F1990768000B32966 /* main.m */,
@@ -240,6 +248,7 @@
 				072EFE5A1990768000B32966 /* Main_iPad.storyboard in Resources */,
 				072EFE5F1990768000B32966 /* Images.xcassets in Resources */,
 				072EFE571990768000B32966 /* Main_iPhone.storyboard in Resources */,
+				07CB4B9719B25285006B9122 /* laika.png in Resources */,
 				072EFE4E1990768000B32966 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +272,7 @@
 				07CB4B9019B24880006B9122 /* Conversion.m in Sources */,
 				072EFE501990768000B32966 /* main.m in Sources */,
 				072EFE541990768000B32966 /* OSPAppDelegate.m in Sources */,
+				07CB4B9319B25190006B9122 /* AgeOfLaika.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
